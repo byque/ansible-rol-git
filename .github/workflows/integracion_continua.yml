@@ -1,0 +1,24 @@
+---
+# https://molecule.readthedocs.io/ci/#github-actions
+
+name: "Integración Contínua"
+
+on: [push]
+
+jobs:
+  construir:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: "Registrar el código fuente"
+        uses: actions/checkout@v3
+
+      - name: "Configurar Python 3"
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+
+      - name: "Instalar las dependencias para las pruebas"
+        run: pip3 install ansible-core molecule
+
+      - name: "Ejecutar las pruebas de Molecule"
+        run: molecule test
