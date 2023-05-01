@@ -19,3 +19,6 @@ jobs:
 
       - name: "Instalar las dependencias para las pruebas"
         run: pip3 install ansible-core molecule
+
+      - name: "Ejecutar las pruebas de Molecule"
+        run: molecule test
