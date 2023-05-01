@@ -8,6 +8,7 @@ galaxy_info:
 
   license: MIT
   min_ansible_version: 2.14
+  namespace: "byque"
 
   platforms:
   - name: Ubuntu
