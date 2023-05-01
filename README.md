@@ -1,6 +1,6 @@
 Role Name
 =========
-![integracion_continua](https://github.com/cloudcxn/actions/actions/workflows/integracion_continua.yml/badge.svg)
+![integracion_continua](https://github.com/cloudcxn/ansible-rol-git/actions/workflows/integracion_continua.yml/badge.svg)
 
 A brief description of the role goes here.
 
