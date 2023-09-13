@@ -22,11 +22,11 @@ Ninguna.
 Libro de Ejemplo
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
+```yaml
+    - hosts: servidores
       roles:
-         - { role: byque.git, x: 42 }
+         - { role: byque.git }
+```
 
 Licencia
 --------
